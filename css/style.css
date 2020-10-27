@@ -40,29 +40,28 @@ a {
 
 /*============= CAROUSEL =============*/
 
-/*---Change Carousel Transition Speed --*/
+.carousel-caption {
+  top: 30%;
+}
 
-/* .carousel-item {
-  border: orange 2px solid;
-} */
+.carousel-caption h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
 
-/*-- Carousel Content --*/
+.carousel-caption p {
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
 
 /* form */
 
-.MForm {
-  bottom: 0;
-  z-index: 10;
+.myform>input {
+  margin: 0.5rem;
+  border: none;
 }
-
-.FormTitle {
-  padding: 0.7rem 1.2rem;
-  margin: 1rem!important;
-}
-
-/*===== FIXED BACKGROUND IMG =====*/
-
-/*-- Emoji Navbar --*/
 
 /*============= FOOTER =============*/
 
