@@ -58,8 +58,9 @@ a {
 
 /* form */
 
-.myform>input {
+.myform>input, .myform>button {
   margin: 0.5rem;
+  padding: 1%;
   border: none;
 }
 
