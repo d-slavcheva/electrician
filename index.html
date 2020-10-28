@@ -174,22 +174,46 @@
 			</div>
 		</div>
 		<!-- End Form -->
-
 	</div>
 	<!-- End Carousel Content -->
 
-
-
-
+	<button onclick="topFunction()" id="homebutton" class="rounded-circle text-light p-3 border-0"
+		title="Go to top"><img src="img/Background.png" alt=""></button>
 	<!-- End Image Carousel -->
 
+	<!-- Two Column Section -->
+	<div class="container-fluid">
+		<div class="d-flex align-content-end flex-wrap">
+			<div class="col-lg-8">
+				<img src="img/layout01-img01.jpg" alt="">
+			</div>
+			<div class="col-lg-4">
+				<p>About Us</p>
+				<h2>Outstanding Residential & Commercial Services</h2>
+				<p> All of our services are backed by our 100% satisfaction guarantee. Our electricians can install
+					anything
+					from new security lighting for your outdoors to a whole home generator that will keep your
+					appliances
+					working during a power outage.</p>
+				<ul>
+					<li>Full-service electrical layout, design</li>
+					<li>Wiring and installation/upgrades</li>
+					<li>Emergency power solutions (generators)</li>
+					<li>Virtually any electrical needs you have – just ask!</li>
+				</ul>
+			</div>
+			<div class="row">
+				<img src="" alt="">
+				<div>
+					<h2>Mark Smith</h2>
+					<p>Your own Electrician</p>
+				</div>
+				<img src="" alt="sign">
+			</div>
+		</div>
+	</div>
 
-	<!-- Main Page Heading -->
-
-
-	<!-- Three Column Section -->
-
-	<!-- End Three Column Section -->
+	<!-- End Two Column Section -->
 
 
 	<!-- Emoji Navbar First -->
@@ -239,6 +263,24 @@
 	<script src="js/all.min.js"></script>
 
 	<!-- End Script Source Files -->
+
+	<!-- Script Home Button -->
+	<script>
+		var mybutton = document.getElementById("homebutton");
+		window.onscroll = function () { scrollFunction() };
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+		function topFunction() {
+			document.body.scrollTop = 0;
+			document.documentElement.scrollTop = 0;
+		}
+	</script>
 </body>
 
 </html>
