@@ -14,6 +14,26 @@ a {
   font-weight: 600;
 }
 
+.poppi {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
 #homebutton {
   display: none;
   background-color: rgba(40, 167, 69, 0.7)!important;
@@ -21,6 +41,8 @@ a {
   bottom: 0.8rem;
   right: 0.8rem;
   z-index: 1;
+  width: 64px;
+  height: 64px;
 }
 
 #homebutton:hover {
@@ -57,12 +79,6 @@ a {
   top: 30%;
 }
 
-.carousel-caption h2 {
-  font-size: 3rem;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
-}
-
 .carousel-caption p {
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
@@ -75,6 +91,19 @@ a {
   margin: 0.5rem;
   padding: 1%;
   border: none;
+}
+
+/*============= Section About  =============*/
+
+#img2 {
+  position: absolute;
+  left: -10%;
+  top: 60%;
+}
+
+#about {
+  background-color: #ffffff;
+  right: 10%;
 }
 
 /*============= FOOTER =============*/
@@ -94,15 +123,12 @@ a {
     padding-right: 0;
     padding-left: 0
   }
-}
-
-@media (max-width: 576px) {
-  .top-bar>.container {
-    padding: 0 1rem;
+  @media (max-width: 576px) {
+    .top-bar>.container {
+      padding: 0 1rem;
+    }
   }
-}
-
-/*============ BOOTSTRAP BREAK POINTS:
+  /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
@@ -120,12 +146,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
-
-/*-- Bootstrap Mobile Gutter Fix --*/
-
-.row, .container-fluid {
-  margin-left: 0px !important;
-  margin-right: 0px !important;
-}
-
-/* font-family: 'Poppins', sans-serif; */
+  /*-- Bootstrap Mobile Gutter Fix --*/
+  .row, .container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  /* font-family: 'Poppins', sans-serif; */

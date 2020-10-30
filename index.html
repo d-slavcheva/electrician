@@ -23,7 +23,7 @@
 	<div class="top-bar bg-dark text-light">
 		<div class="container">
 			<div class="row">
-				<div class="col-9 p-0 justify-content-start">
+				<div class="col-lg-9 col-md-6  p-0 justify-content-start">
 					<div class="row my-3">
 						<div class="tb-item mr-3">
 							<i class="fas fa-map-marker-alt text-success"></i>
@@ -35,8 +35,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-3 p-0">
-					<div class="row my-3 justify-content-end">
+				<div class="col-lg-3 col-md-6 p-0">
+					<div class="row my-3 justify-content-md-end ">
 						<div class="tb-item">
 							<i class="fas fa-phone text-light mr-2"></i>
 							<a href="tel:1 (800) 7 65-43-21" class="my-0 text-success text-right">1 (800)
@@ -113,7 +113,7 @@
 	<!-- End Navigation -->
 
 	<!-- Image Carousel -->
-	<div id="carousel1" class="carousel slide carousel-fade" data-interval="40000" data-ride="carousel">
+	<div id="carousel1" class="carousel slide carousel-fade mb-lg-5" data-interval="40000" data-ride="carousel">
 		<!-- <ol class="carousel-indicators">
 			<li data-target="#carousel1" data-slide-to="0" class="active"></li>
 			<li data-target="#carousel1" data-slide-to="1"></li>
@@ -177,42 +177,47 @@
 	</div>
 	<!-- End Carousel Content -->
 
-	<button onclick="topFunction()" id="homebutton" class="rounded-circle text-light p-3 border-0"
-		title="Go to top"><img src="img/Background.png" alt=""></button>
+	<button onclick="topFunction()" id="homebutton" class="rounded-circle text-light p-3 border-0" title="Go to top"><i
+			class="fas fa-bolt fa-2x text-white"></i></button>
 	<!-- End Image Carousel -->
 
 	<!-- Two Column Section -->
-	<div class="container-fluid">
-		<div class="d-flex align-content-end flex-wrap">
-			<div class="col-lg-8">
-				<img src="img/layout01-img01.jpg" alt="">
-			</div>
-			<div class="col-lg-4">
-				<p>About Us</p>
-				<h2>Outstanding Residential & Commercial Services</h2>
-				<p> All of our services are backed by our 100% satisfaction guarantee. Our electricians can install
-					anything
-					from new security lighting for your outdoors to a whole home generator that will keep your
-					appliances
-					working during a power outage.</p>
-				<ul>
-					<li>Full-service electrical layout, design</li>
-					<li>Wiring and installation/upgrades</li>
-					<li>Emergency power solutions (generators)</li>
-					<li>Virtually any electrical needs you have – just ask!</li>
-				</ul>
-			</div>
+	<section class="" id="info">
+		<div class="container">
 			<div class="row">
-				<img src="" alt="">
-				<div>
-					<h2>Mark Smith</h2>
-					<p>Your own Electrician</p>
+				<div class="col-lg-6">
+					<img src="img/layout01-img01.jpg" id="img1" class="w-100" alt="">
+					<img src="img/layout01-img02.jpg" id="img2" class="w-75" alt="sign">
 				</div>
-				<img src="" alt="sign">
+				<div id="about" class="col-lg-6 mt-5 p-5">
+					<p class="text-success poppi font-weight-bold">About Us</p>
+					<h3 class="poppi">Outstanding Residential & Commercial Services</h3>
+					<p class="text-muted"> All of our services are backed by our 100% satisfaction guarantee. Our
+						electricians can install
+						anything from new security lighting for your outdoors to a whole home generator that will keep
+						your
+						appliances working during a power outage.</p>
+					<ul>
+						<li><i class="fas fa-check text-success mr-3"></i>Full-service electrical
+							layout, design</li>
+						<li><i class="fas fa-check text-success mr-3"></i>Wiring and installation/upgrades</li>
+						<li><i class="fas fa-check text-success mr-3"></i>Emergency power solutions (generators)</li>
+						<li><i class="fas fa-check text-success mr-3"></i>Virtually any electrical needs you have – just
+							ask!</li>
+					</ul>
+					<div class="row align-items-center">
+						<img src="img/img-02.jpg" class="rounded-circle w-auto mr-3" alt="">
+						<div class="border-right border-right pr-3">
+							<h5 class="pt-2 poppi">Mark Smith</h5>
+							<p class="poppi">Your own Electrician</p>
+						</div>
+						<img src="img/img-01.png" class="ml-3 w-auto" alt="">
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 
+	</section>
 	<!-- End Two Column Section -->
 
 
