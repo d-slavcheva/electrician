@@ -93,17 +93,22 @@ ul {
   border: none;
 }
 
+.myform {
+  bottom: 86px;
+  z-index: 10;
+}
+
 /*============= Section About  =============*/
 
 #img2 {
-  position: absolute;
-  left: -10%;
-  top: 60%;
+  margin-left: -10%;
+  margin-top: -20%;
+  max-width: 60%;
 }
 
 #about {
   background-color: #ffffff;
-  right: 10%;
+  margin-left: -10%;
 }
 
 /*============= FOOTER =============*/
@@ -114,7 +119,17 @@ ul {
 
 /* Devices under 1199px (xl) */
 
-@media (max-width: 1199.98px) {}
+@media (max-width: 991px) {
+  .myform {
+    background: none!important;
+    bottom: 5rem;
+    padding: 10px;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
 
 /* Devices under 768px (md) */
 
