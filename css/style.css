@@ -98,7 +98,7 @@ ul {
   z-index: 10;
 }
 
-/*============= Section About  =============*/
+/*============= 2 col Section About  =============*/
 
 #img2 {
   margin-left: -10%;
@@ -109,6 +109,44 @@ ul {
 #about {
   background-color: #ffffff;
   margin-left: -10%;
+}
+
+/*============= 3 col Section  =============*/
+
+.wrapper {
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.ts-img {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  /* opacity: 0.8; */
+}
+
+.ts-content {
+  top: 0;
+  width: 100%;
+  position: absolute;
+  /* border: 3px orange solid; */
+  text-align: center;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+#Show {
+  display: none;
 }
 
 /*============= FOOTER =============*/
@@ -129,21 +167,28 @@ ul {
     font-size: 2.5rem;
     font-weight: 600;
   }
-}
-
-/* Devices under 768px (md) */
-
-@media (max-width: 767.98px) {
-  .top-bar>.container {
-    padding-right: 0;
-    padding-left: 0
+  #about {
+    margin: 1rem auto;
   }
-  @media (max-width: 576px) {
+  .myform>input {
+    border: gray solid 1px;
+    padding: 0.5rem;
+  }
+  .myform ul {
+    /* border: springgreen solid 2px; */
+  }
+  /* Devices under 768px (md) */
+  @media (max-width: 767.98px) {
     .top-bar>.container {
-      padding: 0 1rem;
+      padding-right: 0;
+      padding-left: 0
     }
-  }
-  /*============ BOOTSTRAP BREAK POINTS:
+    @media (max-width: 576px) {
+      .top-bar>.container {
+        padding: 0 1rem;
+      }
+    }
+    /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
@@ -161,9 +206,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
-  /*-- Bootstrap Mobile Gutter Fix --*/
-  .row, .container-fluid {
-    margin-left: 0px !important;
-    margin-right: 0px !important;
-  }
-  /* font-family: 'Poppins', sans-serif; */
+    /*-- Bootstrap Mobile Gutter Fix --*/
+    .row, .container-fluid {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+    /* font-family: 'Poppins', sans-serif; */

@@ -23,7 +23,7 @@
 	<div class="top-bar bg-dark text-light">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-9 col-md-6  p-0 justify-content-start">
+				<div class="col-lg-9 col-md-8 pl-4">
 					<div class="row my-3">
 						<div class="tb-item mr-3">
 							<i class="fas fa-map-marker-alt text-success"></i>
@@ -35,12 +35,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3 col-md-6 p-0">
-					<div class="row my-3 justify-content-md-end ">
+				<div class="col-lg-3 col-md-4 pr-4">
+					<div class="row my-3 justify-content-md-end">
 						<div class="tb-item">
 							<i class="fas fa-phone text-light mr-2"></i>
-							<a href="tel:1 (800) 7 65-43-21" class="my-0 text-success text-right">1 (800)
-								765-43-21</a>
+							<a href="tel:1 (800) 7 65-43-21" class="my-0 text-success text-right">1 (800) 765-43-21</a>
 						</div>
 						<a href="" class="d-none d-lg-block ml-3 text-light"><i class="fas fa-cart-plus"></i></a>
 					</div>
@@ -152,7 +151,7 @@
 		</a> -->
 		<!-- Form -->
 		<div class="navbar navbar-expand-lg navbar-dark bg-dark py-3 container myform">
-			<div class="justify-content-center">
+			<div class="mx-auto">
 				<button class="navbar-toggler bg-success text-light rounded-top border-0 p-3" type="button"
 					data-toggle="collapse" data-target="#RequestService" aria-controls="RequestService"
 					aria-expanded="false" aria-label="Toggle navigation">Request Service Today <i
@@ -189,7 +188,7 @@
 					<img src="img/layout01-img01.jpg" id="img1" class="w-100" alt="">
 					<img src="img/layout01-img02.jpg" id="img2" class="" alt="sign">
 				</div>
-				<div id="about" class="col-lg-6 mt-5 p-5">
+				<div id="about" class="col-lg-6 mt-lg-5 p-lg-5">
 					<p class="text-success poppi font-weight-bold">About Us</p>
 					<h3 class="poppi">Outstanding Residential & Commercial Services</h3>
 					<p class="text-muted"> All of our services are backed by our 100% satisfaction guarantee. Our
@@ -217,8 +216,41 @@
 			</div>
 		</div>
 	</section>
-	<!-- End Two Column Section -->
+	<!-- End Two Section Column -->
+	<!-- Three Section Column -->
+	<section>
+		<div class="row my-5">
+			<div class="col-lg-4 p-0 wrapper ">
+				<img src="img/slideinfo-01.jpg" class="w-100" alt="">
+				<img src="img/slideinfo-marker.png" class="ts-img" alt="">
+				<div class="ts-content overlay">
+					<h2 class="pt-5">Commercial</h2>
+					<div id="Show">
+						<p class="px-3">We offer the highest level of responsiveness and reliability, including
+							on-line
+							job management and reporting. Our highly experienced contractors across the nation
+							ensure
+							that your premises are always maintained and compliant.
+						</p>
+					</div>
+					<button type="button" class="btn btn-success rounded-circle  mt-3" id="btnTogg"><i
+							class="fas fa-plus"></i>
+					</button>
+				</div>
+			</div>
 
+
+
+
+
+
+
+		</div>
+
+	</section>
+
+
+	<!-- End of Three Section Column -->
 
 	<!-- Emoji Navbar First -->
 
@@ -285,6 +317,14 @@
 			document.documentElement.scrollTop = 0;
 		}
 	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#btnTogg").click(function () {
+				$("#Show").toggle();
+			});
+		});
+	</script>
+
 </body>
 
 </html>
