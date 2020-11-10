@@ -193,7 +193,7 @@ ul {
 
 #gallery figure {
   position: relative;
-  padding-bottom: 9rem;
+  padding-bottom: 10rem;
 }
 
 #gallery figcaption {
@@ -203,6 +203,12 @@ ul {
   padding: 2rem .5rem 1rem .5rem;
   background-color: white;
   line-height: 1.6;
+}
+
+button.filter:hover, button.filter:focus {
+  color: #28a745!important;
+}
+
 }
 
 /*============= FOOTER =============*/

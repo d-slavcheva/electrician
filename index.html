@@ -306,7 +306,7 @@
 				<div class="row">
 					<h2 class="m-auto p-3">What We Offer</h2>
 					<div class="col-md-12 d-flex justify-content-center mb-5">
-						<button type="button" class="btn poppi font-weight-bold waves-effect filter"
+						<button type="button" class="btn poppi font-weight-bold waves-effect filter active"
 							data-rel="all">All</button>
 						<button type="button" class="btn poppi font-weight-bold waves-effect filter"
 							data-rel="1">Commercial Services</button>
@@ -557,6 +557,7 @@
 		$(function () {
 			var selectedClass = "";
 			$(".filter").click(function () {
+				$("button").even().removeClass("active");
 				selectedClass = $(this).attr("data-rel");
 				$("#gallery").fadeTo(100, 0.1);
 				$("#gallery figure").not("." + selectedClass).fadeOut().removeClass('animation');
