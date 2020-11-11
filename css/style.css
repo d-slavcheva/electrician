@@ -32,10 +32,12 @@ h3 {
   font-size: 2rem;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
 }
 
 h5 {
   line-height: 2rem;
+  font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -51,7 +53,7 @@ ul {
   display: none;
   background-color: rgba(40, 167, 69, 0.7)!important;
   position: fixed;
-  bottom: 0.8rem;
+  bottom: 1rem;
   right: 0.8rem;
   z-index: 1;
   width: 64px;
@@ -81,7 +83,7 @@ ul {
   color: #f47629!important;
 }
 
-.active, .active>.nav-link, .nav-link:hover {
+button.active, .active>.nav-link, .nav-link:hover {
   color: #28a745!important;
 }
 
@@ -209,6 +211,38 @@ button.filter:hover, button.filter:focus {
   color: #28a745!important;
 }
 
+.showcase {
+  position: relative;
+  height: 500px;
+  background: url('../img/box01-bg02-desktop.jpg') no-repeat center top/cover;
+}
+
+.showcasecontent {
+  background-color: white;
+  top: 10%;
+  position: absolute;
+}
+
+.showcasecontent>h3 {
+  border-left: solid #28a745 4px!important;
+}
+
+/* Prices cards*/
+
+.card {
+  border: none;
+}
+
+.carousel-indicators li {
+  width: .625rem;
+  height: .625rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #555555;
+}
+
+.carousel-indicators {
+  bottom: -50px;
 }
 
 /*============= FOOTER =============*/
@@ -236,14 +270,38 @@ button.filter:hover, button.filter:focus {
     border: gray solid 1px;
     padding: 0.5rem;
   }
+  .topminus {
+    margin: 2rem 0 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 25%;
+    max-width: 100%;
+  }
+}
+
+.carousel-multi-item-2 .card img {
+  border-radius: 2px;
 }
 
 /* Devices under 768px (md) */
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .top-bar>.container {
     padding-right: 0;
     padding-left: 0
+  }
+  #img2 {
+    margin-top: -5%;
+    margin-left: 0px;
+    max-width: 60%;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.2;
   }
 }
 
@@ -252,6 +310,10 @@ button.filter:hover, button.filter:focus {
 @media (max-width: 576px) {
   .top-bar>.container {
     padding: 0 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.2;
   }
 }
 
