@@ -182,23 +182,12 @@ button.active, .active>.nav-link, .nav-link:hover {
 
 /* Gallery with filter */
 
-.gallery .pics {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease;
-}
-
-.gallery .animation {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-##GalleryServices figure {
+#GalleryServices figure {
   position: relative;
   padding-bottom: 10rem;
 }
 
-##GalleryServices figcaption {
+#GalleryServices figcaption {
   position: absolute;
   margin-top: -3rem;
   margin-right: 3rem;
@@ -210,6 +199,8 @@ button.active, .active>.nav-link, .nav-link:hover {
 button.filter:hover, button.filter:focus {
   color: #28a745!important;
 }
+
+/*============= Prices section =============*/
 
 .showcase {
   position: relative;
@@ -246,6 +237,22 @@ button.filter:hover, button.filter:focus {
 }
 
 /*============= Gallery section =============*/
+
+.gallery .lightbox img {
+  width: 100%;
+  margin-bottom: 30px;
+  transition: 0.2s ease-in-out;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.gallery .lightbox img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.baguetteBox-button {
+  background-color: transparent !important;
+}
 
 /*============= FOOTER =============*/
 
