@@ -5,9 +5,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* .container {
-  border: 2px red solid;
-} */
+.container {
+  /* border: 2px red solid; */
+}
 
 a {
   text-decoration: none;
@@ -120,7 +120,7 @@ button.active, .active>.nav-link, .nav-link:hover {
   z-index: 10;
 }
 
-/*============= two col Section About  =============*/
+/*============= Section About  =============*/
 
 #img2 {
   margin-left: -10%;
@@ -193,12 +193,12 @@ button.active, .active>.nav-link, .nav-link:hover {
   transform: scale(1);
 }
 
-#gallery figure {
+##GalleryServices figure {
   position: relative;
   padding-bottom: 10rem;
 }
 
-#gallery figcaption {
+##GalleryServices figcaption {
   position: absolute;
   margin-top: -3rem;
   margin-right: 3rem;
@@ -244,6 +244,8 @@ button.filter:hover, button.filter:focus {
 .carousel-indicators {
   bottom: -50px;
 }
+
+/*============= Gallery section =============*/
 
 /*============= FOOTER =============*/
 
