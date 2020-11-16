@@ -128,7 +128,7 @@ button.active, .active>.nav-link, .nav-link:hover {
   max-width: 60%;
 }
 
-.topminus {
+.leftminus {
   background-color: #ffffff;
   margin-left: -10%;
 }
@@ -254,6 +254,36 @@ button.filter:hover, button.filter:focus {
   background-color: transparent !important;
 }
 
+/*============= Blog =============*/
+
+#OurBlog {
+  position: ;
+}
+
+.blogheader {
+  padding: 1rem;
+  background-color: #ffffff;
+  margin-top: -20%;
+  margin-bottom: 1rem;
+}
+
+.blockquote {
+  margin: 2rem;
+  padding-left: 2rem;
+  border-left: solid #28a745 6px!important;
+}
+
+.bordershadow {
+  border: 2px solid #f4f4f4;
+  padding: 12px 0 10px 20px;
+  border-radius: 2px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(171, 171, 171, .18);
+  outline: none;
+  transition: border-color .2s;
+  border-radius: 3px;
+}
+
 /*============= FOOTER =============*/
 
 /*============= SOCKET =============*/
@@ -279,7 +309,7 @@ button.filter:hover, button.filter:focus {
     border: gray solid 1px;
     padding: 0.5rem;
   }
-  .topminus {
+  .leftminus {
     margin: 2rem 0 0 0;
   }
 }
