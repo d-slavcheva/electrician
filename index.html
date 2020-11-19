@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- Style CSS -->
 	<link rel="stylesheet" href="css/style.css">
+	<!-- Script -->
+	<!-- <link rel="stylesheet" href="js/script.js"> -->
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
@@ -100,10 +102,10 @@
 						<a class="nav-link" href="#">Shop</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Faq</a>
+						<a class="nav-link" href="#OurFAQ">Faq</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="#Contact">Contact</a>
 					</li>
 				</ul>
 
@@ -780,8 +782,9 @@
 	<!--Gallery section -->
 
 	<!-- Blog Section Two Column -->
-	<div class="container">
-		<div id=OurBlog>
+
+	<section id=OurBlog>
+		<div class="container">
 			<div class="text-lg-center">
 				<h5 class="text-success mt-5">Electrical Blog</h5>
 				<h2 class="m-auto p-3">Our Blog Posts</h2>
@@ -914,33 +917,189 @@
 						<div class="calendar_weekdays"></div>
 						<div class="calendar_content"></div>
 					</div>
-
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- Emoji Navbar First -->
+	</section>
+	<!-- Start FAQ -->
+	<section id=OurFAQ>
+		<div class="container">
+			<div class="text-lg-center">
+				<h5 class="text-success mt-5">Your Questions. Our Answers</h5>
+				<h2 class="m-auto p-3">Frequently Asked Questions</h2>
+				<p class="col-lg-8 mx-auto ">You will find answers to all of your most common Electrical Services
+					related questions located here.</p>
+				<div class="accordion" id="accordionFAQ">
+					<div class="card">
+						<div class="card-header bg-white" id="headingOne">
+							<h2 class="mb-0">
+								<button class="btn btn-block text-left font-weight-bold" type="button"
+									data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+									aria-controls="collapseOne">
+									Does conduit need to go inside the transformer box?
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
+							<div class="card-body mb-3">
+								No. Conduit should be stopped just short of the box.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header bg-white" id="headingTwo">
+							<h2 class="mb-0">
+								<button class="btn btn-block text-left font-weight-bold collapsed" type="button"
+									data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+									aria-controls="collapseTwo">
+									How close to the pole do I bring my conduit to?
+								</button>
+							</h2>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionFAQ">
+							<div class="card-body mb-3">
+								The top of the elbow must be 6" from the pole..
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header bg-white" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-block text-left font-weight-bold collapsed" type="button"
+									data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+									aria-controls="collapseThree">
+									Is additional conduit required beyond what is installed in the ditch?
+								</button>
+							</h2>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordionFAQ">
+							<div class="card-body mb-3">
+								If the service is being supplied from a utility pole, the member is required to
+								supply 1-10 section of SCH 80 PVC and 2-10 sections of SCH 40 PVC to be left near
+								the base of the pole for installation by the power company up the pole.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header bg-white" id="headingFour">
+							<h2 class="mb-0">
+								<button class="btn btn-block text-left font-weight-bold collapsed" type="button"
+									data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+									aria-controls="collapseFour">
+									Is there a difference in meter bases?
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+							data-parent="#accordionFAQ">
+							<div class="card-body mb-3">
+								Yes, There are three types. Overhead only, Underground only, and Overhead/Underground
+								combination bases. However, combination boxes are not recommended for Underground
+								installations because of their limited wire space.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header bg-white" id="headingFive">
+							<h2 class="mb-0">
+								<button class="btn btn-block text-left font-weight-bold collapsed" type="button"
+									data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+									aria-controls="collapseFive">
+									Can septic lines be installed under power lines?
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+							data-parent="#accordionFAQ">
+							<div class="card-body mb-3">
+								Yes.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header bg-white" id="headingSix">
+							<h2 class="mb-0">
+								<button class="btn btn-block text-left font-weight-bold collapsed" type="button"
+									data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+									aria-controls="collapseSix">
+									Can permanent service be installed if the house has had a ruff in inspection?
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionFAQ">
+							<div class="card-body mb-3">
+								No, We will not set a meter without a final inspection or in some instances a non
+								occupancy permit shall be allowed from the local electrical inspector.
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header bg-white" id="headingSeven">
+							<h2 class="mb-0">
+								<button class="btn btn-block text-left font-weight-bold collapsed" type="button"
+									data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+									aria-controls="collapseSeven">
+									What about outdoor lighting?
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+							data-parent="#accordionFAQ">
+							<div class="card-body mb-3">
+								We offer a variety of lighting products including decorative colonial, cobra head,
+								directional floodlights, and security lights. We can customize plans to fit any lighting
+								need.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-10 mx-auto">
+					<h5 class="text-success mt-5">Send us your questions below</h5>
+					<h2 class="m-auto p-3">Ask Your Question</h2>
+					<p class="col-lg-8 mx-auto ">Are you stumped by a home wiring project or problem? Don't worry – we
+						are here to help. There are a number of options available for you.</p>
+
+					<form action="">
+						<input type="text" class="form-control bordershadow my-2" id="YourName" placeholder="Your Name">
+						<div class="row">
+							<div class="col-8 pl-0">
+								<input type="text" size="" class="form-control bordershadow my-2" id="staticEmail2"
+									value="email@example.com"></div>
+							<div class="col-4 pr-0"><input type="tel" class="form-control bordershadow my-2"
+									id="YourPhone" placeholder="Your Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+									required></div>
+						</div>
+						<textarea name="" id="" cols="30" rows="10" class="bordershadow my-2"></textarea>
+						<p class="text-muted">All Electrical work must be done by a qualified licensed electrician.</p>
+						<button type="submit" class="btn btn-success"><i class="fas fa-bolt text-white mr-2"></i>Ask
+							your
+							question</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="Contact">
+		<div class="container-fluid">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4997.108146875935!2d6.7681647776983445!3d51.227289868360145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8ca1977193c49%3A0x52760fc4a2dc0f0!2sAltstadt%2C%2040213%20D%C3%BCsseldorf!5e0!3m2!1sen!2sde!4v1605782056388!5m2!1sen!2sde"
+				width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false"
+				tabindex="0"></iframe>
+		</div>
+
+	</section>
 
 
-	<!-- Start Fixed Background IMG -->
 
-	<!-- End Fixed Background IMG -->
+	<!-- Start  -->
 
-
-	<!-- Emoji Navbar Second -->
-
-
-	<!-- Modal Popup -->
-
-
-	<!-- Start Two Column Section -->
-
-	<!-- End Two Column Section -->
-
-
-	<!-- Start Jumbotron -->
-
-	<!-- End Jumbotron -->
+	<!-- End  -->
 
 
 	<!-- Start Footer -->

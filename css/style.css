@@ -378,6 +378,16 @@ button.switch-month:hover {
   color: #28a745;
 }
 
+/*============= FAQ =============*/
+
+#accordionFAQ {
+  column-count: 2;
+}
+
+#OurFAQ button:hover, #OurFAQ button:focus {
+  color: #28a745;
+}
+
 /*============= FOOTER =============*/
 
 /*============= SOCKET =============*/
@@ -460,6 +470,9 @@ button.switch-month:hover {
     -webkit-column-width: 100%;
     -moz-column-width: 100%;
     column-width: 100%;
+  }
+  #accordionFAQ {
+    column-count: 1;
   }
 }
 
