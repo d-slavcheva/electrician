@@ -105,18 +105,6 @@ button.active, .active>.nav-link, .nav-link:hover {
   font-size: 1.2rem;
 }
 
-/* form */
-
-.myform>input, .myform>button {
-  margin: 0.5rem;
-  padding: 1%;
-  border: none;
-}
-
-.myform {
-  bottom: 86px;
-  z-index: 10;
-}
 
 /*============= Section About  =============*/
 
@@ -266,18 +254,7 @@ button.filter:hover, button.filter:focus {
   border-left: solid #28a745 6px!important;
 }
 
-.bordershadow {
-  border: 2px solid #f4f4f4;
-  padding: 12px 0 10px 20px;
-  border-radius: 2px;
-  width: 100%;
-  -webkit-box-shadow: 0 2px 5px rgba(171, 171, 171, .18);
-  box-shadow: 0 2px 5px rgba(171, 171, 171, .18);
-  outline: none;
-  -webkit-transition: border-color .2s;
-  transition: border-color .2s;
-  border-radius: 3px;
-}
+
 
 /* Kalender */
 
@@ -402,10 +379,7 @@ button.switch-month:hover {
   #about {
     margin: 1rem auto;
   }
-  .myform>input {
-    border: gray solid 1px;
-    padding: 0.5rem;
-  }
+ 
   .leftminus {
     margin: 2rem 0 0 0;
   }
