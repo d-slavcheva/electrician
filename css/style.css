@@ -222,6 +222,17 @@ button.filter:hover, button.filter:focus {
   bottom: -50px;
 }
 
+.myform>input, .myform>button {
+  margin: 0.5rem;
+  padding: 1%;
+  border: none;
+}
+
+.myform {
+  bottom: 87px;
+  z-index: 10;
+}
+
 /*============= Gallery section =============*/
 
 .gallery .lightbox img {
