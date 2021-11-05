@@ -3,11 +3,9 @@
 body {
   overflow-x: hidden;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
-.container {
-  /* border: 2px red solid; */
-}
 
 a {
   text-decoration: none;
@@ -254,11 +252,6 @@ button.filter:hover, button.filter:focus {
   background-color: transparent !important;
 }
 
-/*============= Blog =============*/
-
-#OurBlog {
-  position: ;
-}
 
 .blogheader {
   padding: 1rem;
