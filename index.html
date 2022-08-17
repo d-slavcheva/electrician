@@ -1208,8 +1208,7 @@
 				calendar.weekline.find("div").css("color", color);
 				calendar.datesBody.find(".today").css("color", "#87b633");
 
-				// find elements (dates) to be clicked on each time
-				// the calendar is generated
+
 				var clicked = false;
 				selectDates(selected);
 
@@ -1231,7 +1230,7 @@
 							thirdClicked.date);
 						if (secondClickDateObj > thirdClickDateObj && thirdClickDateObj > firstClickDateObj) {
 							secondClicked = thirdClicked;
-							// then choose dates again from the start :)
+
 							bothCals.find(".calendar_content").find("div").each(function () {
 								$(this).removeClass("selected");
 							});
@@ -1259,7 +1258,7 @@
 						secondClick = true;
 						secondClicked = getClickedInfo(clicked, calendar);
 
-						// what if second clicked date is before the first clicked?
+
 						var firstClickDateObj = new Date(firstClicked.year,
 							firstClicked.month,
 							firstClicked.date);
@@ -1286,7 +1285,7 @@
 						}
 
 
-						// add between dates to [selected]
+
 						selected = addChosenDates(firstClicked, secondClicked, selected);
 					}
 					selectDates(selected);
@@ -1318,12 +1317,12 @@
 				}
 			}
 
-			function makeMonthArray(passed_month, passed_year) { // creates Array specifying dates and weekdays
+			function makeMonthArray(passed_month, passed_year) {
 				var e = [];
 				for (var r = 1; r < getDaysInMonth(passed_year, passed_month) + 1; r++) {
 					e.push({
 						day: r,
-						// Later refactor -- weekday needed only for first week
+
 						weekday: daysArray[getWeekdayNum(passed_year, passed_month, r)]
 					});
 				}
@@ -1468,7 +1467,7 @@
 			});
 
 
-			//  Click picking stuff
+
 			function getClickedInfo(element, calendar) {
 				var clickedInfo = {};
 				var clickedCalendar,
@@ -1496,7 +1495,7 @@
 					var added_date = secondClicked.date;
 
 					if (added_year > firstClicked.year) {
-						// first add all dates from all months of Second-Clicked-Year
+
 						selected[added_year] = {};
 						selected[added_year][added_month] = [];
 						for (var i = 1;
@@ -1517,10 +1516,10 @@
 						}
 
 						added_year = added_year - 1;
-						added_month = 11; // reset month to Dec because we decreased year
-						added_date = getDaysInMonth(added_year, added_month); // reset date as well
+						added_month = 11;
+						added_date = getDaysInMonth(added_year, added_month);
 
-						// Now add all dates from all months of inbetween years
+
 						while (added_year > firstClicked.year) {
 							selected[added_year] = {};
 							for (var i = 0; i < 12; i++) {
